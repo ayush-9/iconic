@@ -1,5 +1,5 @@
 from django.contrib.auth import authenticate, login, logout
-from django.shortcuts import render,HttpResponse,redirect
+from django.shortcuts import render,HttpResponse,redirect,HttpResponseRedirect
 from django.contrib import messages
 from .models import Types,Product, Contact, Orders, OrderUpdate
 from math import ceil
@@ -207,7 +207,7 @@ def handleLogin(request):
 
         user = authenticate(username=loginusername, password=loginpassword)
 
-        if user is not None:
+        if user:
             login(request, user)
             messages.success(request, "Logged In successfully")
             return redirect('ShopHome')

@@ -11,7 +11,7 @@ urlpatterns = [
     path("checkout/", views.checkout, name="Checkout"),
     path("handlerequest/", views.handlerequest, name="HandleRequest"),
     path("signup", views.handleSignup, name='handleSignup'),
-    path("shop/login", views.handleLogin, name='handleLogin'),
+    path("login", views.handleLogin, name='handleLogin'),
     path("logout", views.handleLogout, name='handleLogout'),
 
 ]

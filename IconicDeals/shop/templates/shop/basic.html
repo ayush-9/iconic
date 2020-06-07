@@ -12,7 +12,10 @@
     <title>{% block title%} {% endblock %}</title>
      <style>
 
+
+
        {% block css %}
+
        .footer-dark {
     padding: 50px 0;
     color: #f0f9ff;
@@ -285,7 +288,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
           </button>
         </div>
         <div class="modal-body">
-          <form action='shop/login' method='post'>
+          <form action='/shop/login' method='post'>
             {% csrf_token %}
             <div class="form-group">
               <label for="username">Username</label>
