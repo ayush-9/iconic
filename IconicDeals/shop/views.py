@@ -9,7 +9,7 @@ from django.views.decorators.csrf import csrf_exempt
 from PayTm import Checksum
 # Create your views here.
 from django.http import HttpResponse
-MERCHANT_KEY = 'kbzk1DSbJiV_O3p5'      #Your-Merchant-Key-Here
+MERCHANT_KEY = '****************'      #Your-Merchant-Key-Here
 
 def index(request):
     type = Types.objects.all()
@@ -222,3 +222,26 @@ def handleLogout(request):
     logout(request)
     messages.success(request, "Successfully Logged Out")
     return redirect('ShopHome')
+
+
+
+
+
+
+
+
+
+
+
+#end
+
+
+
+
+
+
+
+
+
+
+#kbzk1DSbJiV_O3p5 
